@@ -1,0 +1,30 @@
+:root {
+     --grid-rows: 1;
+     --grid-cols: 1;
+   
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 1em;
+    width: 660px;
+    height: 660px;
+    grid-template-columns: repeat(var(--grid-cols),1.5% );
+    grid-template-rows: repeat(var(--grid-rows), 1.5%);
+    border: 1px solid black;
+    
+  }
+
+  #clearButton{
+    display: grid;
+    height: 1.5em;
+    width: 5em;
+    font-size: large;
+  }
+
+
+  .grid-item {
+    padding: 1em;
+    text-align: center;
+    size: 1fr;
+  }
